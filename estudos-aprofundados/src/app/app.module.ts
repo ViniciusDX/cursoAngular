@@ -6,9 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TitleComponent } from './title/TitleComponent';
 import { DataBidingComponent } from './data-biding/data-biding.component';
+import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas-estruturais.component';
 
 @NgModule({
-  declarations: [AppComponent, TitleComponent, DataBidingComponent],
+  declarations: [AppComponent, TitleComponent, DataBidingComponent, DiretivasEstruturaisComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
