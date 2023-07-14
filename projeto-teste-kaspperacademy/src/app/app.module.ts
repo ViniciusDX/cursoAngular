@@ -3,16 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
-import { HomeComponent } from './home/home.component';
-import { DashbordComponent } from './admin/dashbord/dashbord.component';
+import { ServicoComponent } from './servico/servico.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
-    HomeComponent,
-    DashbordComponent
+    ServicoComponent
   ],
   imports: [
     BrowserModule,
