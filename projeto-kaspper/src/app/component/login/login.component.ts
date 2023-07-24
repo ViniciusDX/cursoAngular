@@ -27,6 +27,7 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class LoginComponent implements OnInit {
   form!: FormGroup;
+  private formSubmited!: boolean;
 
   // Injeção de dependêcia do FormBuilder
   constructor(private fp: FormBuilder) {}
@@ -39,5 +40,12 @@ export class LoginComponent implements OnInit {
 
   login() {
     console.log(this.form.value);
+  }
+
+  isFieldInvalid(field: string) {
+    return (
+      (!this.form.get(field)?.valid && this.form.get(field)?.touched) ||
+      (this.form.get(field)?.untouched && this.formSubmited)
+    );
   }
 }

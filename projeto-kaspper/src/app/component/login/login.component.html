@@ -12,7 +12,9 @@
             formControlName="userName"
             required
           />
-          <mat-error> Informe o usuário </mat-error>
+          <mat-error *ngIf="isFieldInvalid('userName')">
+            Informe o usuário
+          </mat-error>
         </mat-form-field>
 
         <mat-form-field class="full-width-input">
@@ -23,7 +25,9 @@
             formControlName="password"
             required
           />
-          <mat-error> Informe o senha </mat-error>
+          <mat-error *ngIf="isFieldInvalid('password')">
+            Informe o senha
+          </mat-error>
         </mat-form-field>
 
         <button mat-raised-button color="primary" type="submit">Login</button>
