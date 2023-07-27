@@ -1,0 +1,16 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer > span {
+  font-size: 1rem;
+  font-weight: 300;
+  color: black;
+}
+.v-middle {
+  color: rgb(187, 6, 6);
+}
