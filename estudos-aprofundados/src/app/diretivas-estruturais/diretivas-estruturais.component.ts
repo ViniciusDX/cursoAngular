@@ -14,6 +14,9 @@ export class DiretivasEstruturaisComponent implements OnInit {
     { nome: 'Eron', idade: 26 },
     { nome: 'Maria', idade: 20 },
   ];
+
+  public nome: string = 'maryanne';
+
   ngOnInit(): void {
     setInterval(() => {
       if (this.condition) {
