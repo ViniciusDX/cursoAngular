@@ -11,4 +11,6 @@ import { LogoComponent } from '../../shared/logo/logo.component';
   standalone: true,
   imports: [MatToolbarModule, MatButtonModule, MatIconModule, LogoComponent],
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  logout(): void {}
+}
